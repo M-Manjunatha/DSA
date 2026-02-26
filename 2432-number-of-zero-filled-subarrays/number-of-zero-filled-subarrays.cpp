@@ -15,7 +15,8 @@ public:
         }
 };
 
-// Explianation:(streak++,count=count+streak)
+// Explianation:(streak++,count=count+streak) 
+//for [1,3,0,0,2,0,0,4]
 // streak=1, count=1
 // streak=2, count=3
 // streak=1,count=4
