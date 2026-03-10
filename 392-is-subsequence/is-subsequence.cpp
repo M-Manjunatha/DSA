@@ -1,16 +1,24 @@
 class Solution {
 public:
-    bool isSubsequence(string s, string t) {
-        int sp = 0;
-        int tp = 0;
+  bool isSubsequence(string s, string t) {
+    // Initialize pointer for s
+    int i = 0;
 
-        while (sp < s.length() && tp < t.length()) {
-            if (s[sp] == t[tp]) {
-                sp++;
-            }
-            tp++;
+    // Traverse through t
+    for (int j = 0; j < t.length(); j++) {
+
+        // If characters match, move pointer in s
+        if (s[i] == t[j]) {
+            i++;
         }
-
-        return sp == s.length();        
+        // If we found all characters in s
+        if (i == s.length()) {
+            return true;
+        }
+        
     }
+
+    // Check if we found all characters
+    return i == s.length();
+}
 };
