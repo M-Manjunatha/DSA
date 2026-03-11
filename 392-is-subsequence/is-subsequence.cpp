@@ -3,7 +3,7 @@ public:
   bool isSubsequence(string s, string t) {
     // Initialize pointer for s
     int i = 0;
-
+    
     // Traverse through t
     for (int j = 0; j < t.length(); j++) {
 
